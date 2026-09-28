@@ -417,7 +417,7 @@ function collectData(){
 
 /* ---------------- FLEXIBLE SCENARIO EVALUATION (rule-based: no AI, no network) ----------------
    Edit CFG to change weights. Add words to any list below to accept more student answers. */
-const CFG = { marks:{fixed:20, care:5, he:5}, carePlanMax:12, healthEdPerCategory:2, crossCredit:0.5, extraTickTolerance:2 };
+const CFG = { marks:{fixed:10, care:5, he:5}, carePlanMax:12, healthEdPerCategory:2, crossCredit:0.5, extraTickTolerance:2 };
 const norm = s => String(s||'').toLowerCase().replace(/oedema/g,'edema').replace(/anaemi/g,'anemi').replace(/haemo/g,'hemo').replace(/foet/g,'fet').replace(/caesar/g,'cesar').replace(/labour/g,'labor').replace(/toxaemia/g,'toxemia')
   .replace(/[\u064B-\u065F\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه')
   .replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d))
